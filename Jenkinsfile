@@ -4,14 +4,14 @@ pipeline{
 		stage('Build'){
 			steps{
 				echo 'Building'
-				bat '''mvn compile
+				bat '''mvn clean install
 					'''
 				}
 		}
 		stage('Test'){
 			steps{
 				echo 'Testing'
-				bat '''mvn test
+				bat '''mvn sonar:sonar
 					'''
 			}
 		}
