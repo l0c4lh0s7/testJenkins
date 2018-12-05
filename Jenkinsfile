@@ -3,7 +3,8 @@ pipeline{
 	stages	{
 		stage('Build'){
 			steps{
-				echo 'Building'
+				bat echo 'Building'
+				bat mvn compile
 				}
 		}
 		stage('Test'){
