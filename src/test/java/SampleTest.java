@@ -1,3 +1,4 @@
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class SampleTest {
 	public void simpleTestFail() {
 		int a = 1;
 		int b = 2;
-		assertTrue( a + b == 4 );
+		assertFalse( a + b == 4 );
 	}
 	
 	
